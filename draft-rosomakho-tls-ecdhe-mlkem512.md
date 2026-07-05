@@ -19,35 +19,35 @@
 # Change the file extension to match the format (.xml for XML, etc...)
 #
 ###
-title: "TODO - Your title"
-abbrev: "TODO - Abbreviation"
+title: "Post-quantum hybrid ECDHE-MLKEM512 Key Agreement for TLSv1.3"
+abbrev: "ECDHE-MLKEM512 hybrid"
 category: info
 
-docname: draft-todo-yourname-protocol-latest
+docname: draft-rosomakho-tls-ecdhe-mlkem512
 submissiontype: IETF  # also: "independent", "editorial", "IAB", or "IRTF"
 number:
 date:
 consensus: true
 v: 3
-area: AREA
-workgroup: WG Working Group
+area: Security
+workgroup: "Transport Layer Security"
 keyword:
- - next generation
- - unicorn
- - sparkling distributed ledger
+ - tls
+ - mlkem
+ - hybrid
 venue:
-  group: WG
+  group: "Transport Layer Security"
   type: Working Group
-  mail: WG@example.com
-  arch: https://example.com/WG
-  github: USER/REPO
-  latest: https://example.com/LATEST
+  mail: tls@ietf.org
+  arch: https://mailarchive.ietf.org/arch/browse/tls/
+  github: yaroslavros/tls-ecdhe-mlkem512
+  latest: https://yaroslavros.github.io/tls-ecdhe-mlkem512/draft-rosomakho-tls-ecdhe-mlkem512.html
 
 author:
  -
-    fullname: Your Name Here
-    organization: Your Organization Here
-    email: your.email@example.com
+    fullname: Yaroslav Rosomakho
+    organization: Zscaler
+    email: yrosomakho@zscaler.com
 
 normative:
 
