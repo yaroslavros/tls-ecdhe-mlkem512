@@ -9,7 +9,7 @@ number:
 date:
 consensus: true
 v: 3
-area: Security
+area: "Security"
 workgroup: "Transport Layer Security"
 keyword:
  - tls
@@ -17,11 +17,11 @@ keyword:
  - hybrid
 venue:
   group: "Transport Layer Security"
-  type: Working Group
-  mail: tls@ietf.org
-  arch: https://mailarchive.ietf.org/arch/browse/tls/
-  github: yaroslavros/tls-ecdhe-mlkem512
-  latest: https://yaroslavros.github.io/tls-ecdhe-mlkem512/draft-rosomakho-tls-ecdhe-mlkem512.html
+  type: "Working Group"
+  mail: "tls@ietf.org"
+  arch: "https://mailarchive.ietf.org/arch/browse/tls/"
+  github: "yaroslavros/tls-ecdhe-mlkem512"
+  latest: "https://yaroslavros.github.io/tls-ecdhe-mlkem512/draft-rosomakho-tls-ecdhe-mlkem512.html"
 
 author:
  -
