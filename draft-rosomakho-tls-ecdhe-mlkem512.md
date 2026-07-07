@@ -176,9 +176,19 @@ struct {
 } MLKEM512X25519ServerShare;
 ~~~
 
-The name MLKEM512X25519 reflects the order of the encoded components in the
-key_exchange field: the ML-KEM-512 value is encoded first, followed by the
-X25519 value.
+The name MLKEM512X25519 reflects the order of the component algorithms in the
+NamedGroup definition. This is the ordering convention specified by
+{{Section 3.2 of TLS-HYBRID}}, which requires the order of shares in the
+concatenated `key_exchange` value to match the order of algorithms indicated in
+the definition of the NamedGroup. Accordingly, the ML-KEM-512 component appears
+first in both the name and the encoded `key_exchange` value, followed by the
+X25519 component.
+
+This differs from the name X25519MLKEM768 defined in {{TLS-ECDHE-MLKEM}}.
+That name is retained for historical compatibility reasons and is explicitly
+documented by {{TLS-ECDHE-MLKEM}} as not following the naming convention in
+{{Section 3.2 of TLS-HYBRID}}. This document follows the convention from
+{{TLS-HYBRID}} for the new MLKEM512X25519 NamedGroup.
 
 ## SecP256r1MLKEM512
 
