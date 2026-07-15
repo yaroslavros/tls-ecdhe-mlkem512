@@ -4,8 +4,8 @@
 
 Transport Layer Security                                    Y. Rosomakho
 Internet-Draft                                                   Zscaler
-Intended status: Informational                               5 July 2026
-Expires: 6 January 2027
+Intended status: Informational                              15 July 2026
+Expires: 16 January 2027
 
 
       Post-quantum hybrid ECDHE-MLKEM512 Key Agreement for TLSv1.3
@@ -56,7 +56,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 6 January 2027.
+   This Internet-Draft will expire on 16 January 2027.
 
 Copyright Notice
 
@@ -233,9 +233,21 @@ Table of Contents
        opaque ecdhe_key[32];
    } MLKEM512X25519ServerShare;
 
-   The name MLKEM512X25519 reflects the order of the encoded components
-   in the key_exchange field: the ML-KEM-512 value is encoded first,
-   followed by the X25519 value.
+   The name MLKEM512X25519 reflects the order of the component
+   algorithms in the NamedGroup definition.  This is the ordering
+   convention specified by Section 3.2 of [TLS-HYBRID], which requires
+   the order of shares in the concatenated key_exchange value to match
+   the order of algorithms indicated in the definition of the
+   NamedGroup.  Accordingly, the ML-KEM-512 component appears first in
+   both the name and the encoded key_exchange value, followed by the
+   X25519 component.
+
+   This differs from the name X25519MLKEM768 defined in
+   [TLS-ECDHE-MLKEM].  That name is retained for historical
+   compatibility reasons and is explicitly documented by
+   [TLS-ECDHE-MLKEM] as not following the naming convention in
+   Section 3.2 of [TLS-HYBRID].  This document follows the convention
+   from [TLS-HYBRID] for the new MLKEM512X25519 NamedGroup.
 
 4.2.  SecP256r1MLKEM512
 
