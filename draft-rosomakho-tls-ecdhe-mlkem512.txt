@@ -348,7 +348,7 @@ Table of Contents
 
 8.1.  MLKEM512X25519
 
-   Value:  TBD1 (0xHEXTBD1)
+   Value:  4586 (0x11EA)
    Description:  MLKEM512X25519
    DTLS-OK:  Y
    Recommended:  N
@@ -357,7 +357,7 @@ Table of Contents
 
 8.2.  SecP256r1MLKEM512
 
-   Value:  TBD2 (0xHEXTBD2)
+   Value:  4585 (0x11E9)
    Description:  SecP256r1MLKEM512
    DTLS-OK:  Y
    Recommended:  N
