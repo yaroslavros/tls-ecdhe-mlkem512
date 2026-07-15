@@ -290,7 +290,7 @@ according to the procedures in {{Section 6 of ?IANA-TLS=RFC9847}}.
 ## MLKEM512X25519
 
  Value:
- : TBD1 (0xHEXTBD1)
+ : 4586 (0x11EA)
 
  Description:
  : MLKEM512X25519
@@ -311,7 +311,7 @@ according to the procedures in {{Section 6 of ?IANA-TLS=RFC9847}}.
 ## SecP256r1MLKEM512
 
  Value:
- : TBD2 (0xHEXTBD2)
+ : 4585 (0x11E9)
 
  Description:
  : SecP256r1MLKEM512
